@@ -1,0 +1,55 @@
+p {
+    color: blue;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    background-color: aquamarine;
+    border: 2px solid red;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 60px;
+}
+
+li {
+    font-weight: bold;
+}
+
+.btn, input[type="text"] {
+    margin: 10px;
+    width: 300px;
+}
+
+input[type="text"] {
+    border: 2px solid aquamarine;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.btn {
+    background-color: blanchedalmond;
+}
+
+.btn:hover {
+    background-color: violet;
+}
+
+.btn:active {
+    background-color: rgb(203, 109, 203);
+    position: relative;
+    top: 2px;
+}
+
+.img-border {
+    border: 4px dashed deeppink;
+}
+
+.img-border-radius {
+    border-radius: 50px;
+}
+
+#heading {
+    letter-spacing: 10px;
+    text-decoration: none;
+}

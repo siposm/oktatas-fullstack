@@ -1,0 +1,50 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 6; }
+.div2 { grid-area: 2 / 1 / 4 / 3; }
+.div3 { grid-area: 2 / 3 / 4 / 6; }
+.div4 { grid-area: 4 / 1 / 5 / 6; }
+.div5 { grid-area: 5 / 1 / 6 / 6; }
+
+.div1,
+.div2,
+.div3,
+.div4,
+.div5 {
+    border: 2px solid blue;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    list-style-type: none;
+    /* background-color: aquamarine; */
+    margin: 0 10px;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+.flex-wrapper {
+    /* display: flex; */
+}
+
+.flex-wrapper div {
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.flex-wrapper div:hover {
+    background-color: aquamarine;
+}

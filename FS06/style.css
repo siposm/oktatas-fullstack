@@ -1,0 +1,29 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    
+.div1 { grid-area: 1 / 1 / 2 / 3; }
+.div2 { grid-area: 2 / 1 / 3 / 2; }
+.div3 { grid-area: 2 / 2 / 3 / 3; }
+
+.div1,
+.div2,
+.div3 {
+    border: 1px solid red;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.marked-subject {
+    text-decoration: underline;
+}
+
+.vip-student {
+    color: crimson;
+    font-weight: bold;
+}
