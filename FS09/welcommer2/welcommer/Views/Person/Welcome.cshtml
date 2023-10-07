@@ -1,0 +1,26 @@
+﻿@using welcommer.Models;
+@model Person
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Developer data</title>
+</head>
+<body>
+    <h1>Developer data:</h1>
+    <hr />
+    <h3>@Model.Name</h3>
+    <h3>@Model.Age</h3>
+    <h3>@Model.Job</h3>
+    <h4>Skills:</h4>
+    <ul>
+    @{
+        for (int i = 0; i < Model.Skills.Count; i++)
+        {
+            @: <li>@Model.Skills[i]</li>
+        }
+    }
+    </ul>
+</body>
+</html>

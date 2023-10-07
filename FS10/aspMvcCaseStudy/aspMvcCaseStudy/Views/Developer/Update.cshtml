@@ -1,0 +1,48 @@
+﻿@using aspMvcCaseStudy.Models;
+@model Developer;
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 40px;
+        }
+    </style>
+    <title>Update Developer</title>
+</head>
+<body>
+    <h1>UPDATE</h1>
+    <hr />
+    <form action="update" method="post">
+        <input value="@Model.Name" name="name" type="text" placeholder="Name" class="form-control" />
+        <br />
+        <input value="@Model.Salary" name="salary" type="text" placeholder="Salary" class="form-control" />
+        <br />
+        Active: 
+        @Html.CheckBoxFor(x => x.IsActive, new { @class = "form-check" })
+        @* @if (Model.IsActive)
+        {
+            <input checked name="isActive" type="checkbox" value="true" />
+        }
+        else
+        {
+            <input name="isActive" type="checkbox" value="true" />
+        } *@
+        <br />
+        @Html.DropDownListFor(x => x.Job, Html.GetEnumSelectList(typeof(Job)), new { @class = "form-select" })
+        @* @Html.DropDownListFor(x => x.Job, new SelectList(Enum.GetValues(typeof(Job)))) *@
+        @* <select name="job" class="form-control">
+            <option value="Frontend">Frontend</option>
+            <option value="Backend">Backend</option>
+            <option value="Fullstack">Fullstack</option>
+            <option value="Database">Database</option>
+            <option value="HR">HR</option>
+        </select> *@
+        <br />
+        <input type="submit" value="Update" class="btn btn-warning btn-lg mt-5" />
+    </form>
+</body>
+</html>
