@@ -18,28 +18,82 @@ A fájlok létrehozásakor a következő mappastruktúrát alkalmazza:
 
 ### Adatok betöltése
 
-A legalul található adathalmazt (`developers.json`) töltse be az app.js legelején egy változóba.
+A legalul található adathalmazt (`developers.json`) töltse be az `app.js` legelején.
 
 ### Adatok feldolgozása
 
-Dolgozza fel az entitásokat és jelenítse meg őket Bootstrap táblázat segítségével, ebben az oszlopsorrendben: image, name, email, job, age, salary. A kép oszlopba a kép töltsön be kb. 30x30px méretben, az email egy badge-ben jelenjen meg, a salary után pedig kerüljön oda, hogy HUF.
+Dolgozza fel az entitásokat és jelenítse meg őket Bootstrap táblázat segítségével, ebben az oszlopsorrendben: image, name, email, job, age, salary.
+
+- A kép oszlopba a kép töltsön be kb. 30x30px méretben, kör alakban.
+- Az email egy mailto linkként jelenjen meg.
+- A salary után pedig kerüljön oda, hogy HUF, valamint a fizetések skálázva legyenek sárga / zöld / piros badge-k segítségével, a következők szerint:
+  - Ha a fizetés kevesebb mint 400.000 Ft, akkor piros legyen.
+  - Ha a fizetés több mint 400.000 Ft, de kevesebb mint 700.000 Ft akkor sárga legyen.
+  - Ha a fizetés több mint 700.000 Ft, akkor zöld legyen.
 
 ### Számítások
 
-Különálló függvények segítségével adjon választ a következő kédésekre. Hozzon létre a táblázat felett egy szekciót, ide másolja be a kérdéseket, és minden kérdés mellett jelenjen meg a válasz HTML-ben is.
+Különálló függvények segítségével adjon választ a következő kédésekre. A kapott válaszokat jelenítse is meg a HTML-ben. Használja a lentebbi HTML sablont. A kérdésekre adott válaszokat a megfelelő span elembe írja bele JS kódból.
 
-- Mennyi az átlagéletkor?
-- Mennyi az átlagfizetés a frontendesek között?
-- Ki ért a legtöbb mindenhez?
-- Melyik cégből dolgozik a legtöbb ember?
-- Ki a legfiatalabb fejlesztő és mennyit keres ő?
-- Mekkora a különbség fizetésben a legfiatalabb és legidősebb fejlesztő között?
-- Munkakörönként csoportosítva mennyi az átlagfizetés?
+- Q1: Mennyi az átlagéletkor?
+- Q2: Mennyi az átlagfizetés a frontendesek között?
+- Q3: Ki ért a legtöbb mindenhez?
+- Q4: Melyik cégből dolgozik a legtöbb ember?
+- Q5: Ki a legfiatalabb fejlesztő és mennyit keres ő?
+- Q6: Mekkora a különbség fizetésben a legfiatalabb és legidősebb fejlesztő között?
+- Q7: Munkakörönként csoportosítva mennyi az átlagfizetés?
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fullstack-Workshop-03</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calculations">
+        <p>
+            Mennyi az átlagéletkor?
+            <span id="Q1"></span>
+        </p>
+        <p>
+            Mennyi az átlagfizetés a frontendesek között?
+            <span id="Q2"></span>
+        </p>
+        <p>
+            Ki ért a legtöbb mindenhez?
+            <span id="Q3"></span>
+        </p>
+        <p>
+            Melyik cégből dolgozik a legtöbb ember?
+            <span id="Q4"></span>
+        </p>
+        <p>
+            Ki a legfiatalabb fejlesztő és mennyit keres ő?
+            <span id="Q5"></span>
+        </p>
+        <p>
+            Mekkora a különbség fizetésben a legfiatalabb és legidősebb fejlesztő között?
+            <span id="Q6"></span>
+        </p>
+        <p>
+            Munkakörönként csoportosítva mennyi az átlagfizetés?
+            <span id="Q7"></span>
+        </p>
+    </div>
+
+    <div id="table-target"></div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
+```
 
 ### developers.json
 
 ```js
-[
+const developers = [
     {
         "id": "b8878c6c-eda2-35ee-f621-91f9b7af14dc",
         "name": "Kiss Lajos",

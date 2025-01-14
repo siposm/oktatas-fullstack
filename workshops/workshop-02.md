@@ -91,4 +91,4 @@ A főoldal tartalmi részét a következő elvárások, és az alábbi kép ment
   - középső oszlop: egy google maps térképet ágyazzon ide be megfelelő méretben
   - jobb oszlop: a navigációban található linkeket itt is sorolja fel egymás alatt
 
-![main-page-layout|400](main-layout.png)
+<img src="main-layout.png" width="500">
