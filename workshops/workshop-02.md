@@ -35,11 +35,11 @@ A fájlok létrehozásakor a következő mappastruktúrát alkalmazza:
 
 A `styles` mappában hozza létre a fentebb látható három állományt. A `main.css` feladata, hogy minden olyan stílusleírást, amely egységesen alkalmazandó a teljes alkalmazáson belül, itt foglaljon helyet. Ezen kívül szükséges még a `services.css` valamint a `merch.css` létrehozása, a megfelelő aloldalakhoz tartozóan.
 
-Minden html fájl a pages mappán belül kapja meg a main.css-t referenciaként. A másik két aloldal ezen túl még kapja meg a saját css-üket is.
+Minden html fájl a `pages` mappán belül kapja meg a `main.css`-t referenciaként. A másik két aloldal ezen túl még kapja meg a saját CSS-üket is.
 
-Találjon ki valamilyen egységes stílust, amelyet minden oldalon szeretne alkalmazni. Ezt kódolja le a main.css fájlba.
+Találjon ki valamilyen egységes stílust, amelyet minden oldalon szeretne alkalmazni. Ezt kódolja le a `main.css` fájlba.
 
-A merch (`merch.html`) aloldalon a következőt szeretnénk látni, ezt kódolja le a merch.css fájlba:
+A merch (`merch.html`) aloldalon a következőt szeretnénk látni, ezt kódolja le a `merch.css` fájlba:
 
 - a kosárbarakás gombjai legyenek zöldek és bennük a szöveg legyen félkövér
 - az input mezők legyenek rövidek, 30-50 pixel szélességűek
@@ -53,7 +53,7 @@ A szolgáltatások (`services.html`) aloldalon lévő táblázatot "szellősre" 
 
 ### Bootstrap alkalmazása
 
-Azokhoz az aloldalakhoz, ahova nem került be dedikált stílusleíró fájl, oda linkelje be a main.css mellett a Bootstrap css-ét is. Javasolt az 5.3-as verziót használni. Bootstrap segítségével formázza meg a következőket:
+Azokhoz az aloldalakhoz, ahova nem került be dedikált stílusleíró fájl, oda linkelje be a `main.css` mellett a Bootstrap CSS-ét is. Javasolt az 5.3-as verziót használni. Bootstrap segítségével formázza meg a következőket:
 
 - `subjects.html`
   - a tárgyak táblázata legyen sötét témájú
@@ -78,19 +78,17 @@ A navigációs elemeket egészítse ki tetszőlegesen Bootstrap gomb stílussal.
 
 #### Tartalom
 
-A főoldal tartalmi részét a következő elvárások mentén alakítsa ki:
+A főoldal tartalmi részét a következő elvárások, és az alábbi kép mentén alakítsa ki.
 
 - az oldal tetején legyen egy carousel, amelyben képek váltsák egymást
 - alatta hozzon létre egy három oszlopból álló grid részt, amelyben:
-  - bal oszlop: lorem helykitöltő szöveg
-  - középső oszlop: gombok legyenek egymás alatt amibe programnyelvek legyenek
-  - jobb oszlop: lorem helykitöltő szöveg
+  - bal oszlop: Bootstrap card valamilyen tetszőleges tartalommal
+  - középső oszlop: gombok legyenek egymás alatt amibe programnyelvek legyenek tartalomként beleírva
+  - jobb oszlop: Bootstrap card valamilyen tetszőleges tartalommal
 - alatta hozzon létre egy nagy egybefüggő részt, amibe csak helykitöltés jelleggel lorem szöveget rakjon bele
 - az oldal alján legyen a footer rész, amiben 3 oszlopot alakítson ki
   - bal oszlop: a fiktív magánegyetem adatait adja meg (tel, cím, email stb.)
   - középső oszlop: egy google maps térképet ágyazzon ide be megfelelő méretben
   - jobb oszlop: a navigációban található linkeket itt is sorolja fel egymás alatt
 
-A leírás alapján egy blokkos felépítésű ábrát az alábbi kép szemléltet.
-
-![main-page-layout](main-layout.png)
+![main-page-layout|400](main-layout.png)
