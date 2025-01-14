@@ -3,8 +3,7 @@
 | Full-Stack fejlesztés | |
 |-----|---|
 | Témakörök: | HTML |
-| Cím: | Statikus HTML weboldal létrehozása |
-| Oktató: | Sipos Miklós |
+| Cím: | Statikus, több aloldalból álló HTML weboldal létrehozása |
 
 ## Feladat
 
@@ -32,7 +31,7 @@ A fájlok létrehozásakor a következő mappastruktúrát alkalmazza:
 
 Hozza létre az index.html állományt amely a főoldalt fogja képviselni.
 
-TODO főoldal content
+#### Navigációs rész
 
 Hozzon létre egy navigálásra szolgáló részt, ahol a következő linkek szerepeljenek:
 
@@ -43,6 +42,10 @@ Hozzon létre egy navigálásra szolgáló részt, ahol a következő linkek sze
 - Merch-shop (`merch.html`)
 - Kapcsolat (`contact.html`)
 - Probléma bejelentés (`problem.html`)
+
+#### Tartalmi rész
+
+A főoldal tartalmi része a 2. workshop alkalomhoz tartozik.
 
 ### Szolgáltatások
 
@@ -73,6 +76,8 @@ Az aloldal célja, hogy megjelenítse, hogy milyen tárgyak tanulhatók az egyet
 | Fullstack fejlesztés                  | 5      |
 | Mesterséges intelligencia alapjai     | 4      |
 
+Az egyes tárgyakhoz tartozó aloldalakat szintén hozza létre a fentebb ismertetett mappaszerkezetnek megfelelően. Ezekbe a tárggyal kapcsolatos adatokat vigye fel, valamilyen tetszőleges módon. Például minden oldalon h1 címsorral szerepeljen a tárgy neve, alatta h3 címsorral a kreditérték, majd egy horizontális vonalat követően jelenjen meg egy hosszan generált lorem ipsum szöveg, amelyet későbbiekben majd ki tudunk cserélni ha szeretnénk.
+
 ### Hallgatók
 
 Az aloldal célja, hogy megjelenítse, hogy kik azok a hallgatók akik az egyetemen tanulnak. Az alábbi elrendezést valósítsa meg.
@@ -89,6 +94,8 @@ Az aloldal célja, hogy megjelenítse, hogy kik azok a hallgatók akik az egyete
 
 Az aloldal célja, hogy az egyetem logójával fémjelzett termékeket a hallgatók vagy külsős személyek meg tudják vásárolni. Google képkeresést követően helyezzen el pár repi-tárgyat ábrázoló képet (pl. bögre, pulcsi stb.). Minden kép szélessége 200px legyen.
 
+A képek mellett legyen egy input mező, ahova számot lehet beírni (hány darabot szeretnénk adott termékből kosárba rakni), valamint legyen egy-egy gomb is minden termék mellett "Kosárba" címszóval.
+
 ### Kapcsolat
 
 Az aloldal célja, hogy kapcsolatba tudnak lépni az egyetemmel. Ehhez hozzon létre egy űrlapmezőkből álló formot, valamint helyezzen el egy Google Maps térképet beágyazva iframe segítségével.
@@ -101,6 +108,8 @@ A formon a következőket kell kitölteni:
 - üzenet tárgya (rövid szöveges beviteli mező)
 - üzenet szövege (hosszú szöveges beviteli mező)
 - elküldő gomb
+
+A megfelelő helyeken használjon a felhasználókat segítő placeholder-eket.
 
 ### Probléma bejelentés
 
@@ -117,3 +126,5 @@ A formon a következőket kell kitölteni:
 - üzenet tárgya (rövid szöveges beviteli mező)
 - üzenet szövege (hosszú szöveges beviteli mező)
 - elküldő gomb
+
+A megfelelő helyeken használjon a felhasználókat segítő placeholder-eket.
