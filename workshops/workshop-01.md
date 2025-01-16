@@ -1,6 +1,6 @@
 # Workshop #1
 
-| Full-Stack fejlesztés | |
+| Full-Stack Fejlesztés | |
 |-----|---|
 | Témakörök: | HTML |
 | Cím: | Statikus, több aloldalból álló HTML weboldal létrehozása |

@@ -1,6 +1,6 @@
 # Workshop #2
 
-| Full-Stack fejlesztés | |
+| Full-Stack Fejlesztés | |
 |-----|---|
 | Témakörök: | HTML, CSS |
 | Cím: | Statikus oldalak látványának kiegészítése CSS segítségével |

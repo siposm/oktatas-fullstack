@@ -1,6 +1,6 @@
 # Workshop #5
 
-| Full-Stack fejlesztés | |
+| Full-Stack Fejlesztés | |
 |-----|---|
 | Témakörök: | ASP.MVC |
 | Cím: | ASP.MVC CRUD alkalmazás készítése |
@@ -39,25 +39,17 @@ A projekt létrehozásakor a következő MVC rétegzést alkalmazza:
 
 #### View réteg
 
-- Használja a Bootstrap keretrendszert az egyszerű és letisztult kinézetért.
-- Az alábbi oldalakat hozza létre:
-  - Számlalista
-    - Táblázatos formában listázza a számlákat. A táblázatban jelenjenek meg a következő oszlopok:
-    - `PayerName`, `Amount`, `IsPaid`.
-    - Minden sorban legyenek gombok az `Edit`, `Delete` és `MarkAsPaid` műveletekhez.
-  - Új számla hozzáadása
-    - Űrlap a számla adatainak megadásához (pl. befizető neve, összeg).
-  - Számla módosítása
-    - Űrlap a meglévő számla adatainak frissítéséhez.
-  - Számla törlése
-    - Egy gomb a táblázatban, amely egy meglévő számlát töröl (nincs külön nézet).
-  - Státusz módosítása
-    - Egy gomb a táblázatban, amely "Kifizetett"-re állítja a számlát (nincs külön nézet).
+Hozza létre a következő oldalakat, felhasználva a Bootstrap keretrendszert az egységes kinézetért:
 
-#### Bootstrap és feltételes megjelenítés
-
-A számlalista táblázatban az `IsPaid` mező jelenjen meg színezve. Kifizetett számla esetén zöld pipával, míg nem kifizetett számla esetén piros X-szel.
+- Lista nézet (`Index.cshtml`)
+  - Táblázatos formában listázza a számlákat. A táblázatban jelenjen meg minden tulajdonsága a modellnek.
+  - Az `IsPaid` mező jelenjen meg színezve. Kifizetett számla esetén zöld pipával, míg nem kifizetett számla esetén piros X-szel legyen jelölve. (Használja innen kimásolva a karaktereket az egyszerűség kedvéért: ✔ és ✖)
+  - Minden sorban legyenek gombok az `Edit`, `Delete` és `MarkAsPaid` műveletekhez, amelyekre kattintva a megfelelő művelet végződjön is el. Szerkesztés esetén a megfelelő nézetre navigáljon át az alkalmazás és ott lehessen módosítani a szükséges entitást - lásd alább. Törlés esetén ne legyen navigáció, csak törölje a rekordot. A fizetettre állításnál sincs új nézet, csak műveletvégzés.
+- Új számla hozzáadása (`Create.cshtml`)
+  - Űrlap a számla adatainak megadásához (pl. befizető neve, összeg).
+- Számla módosítása (`Update.cshtml`)
+  - Űrlap a meglévő számla adatainak frissítéséhez.
 
 #### Validáció JavaScript segítségével
 
-Adjon hozzá kliensoldali validációt az új számla felviteli űrlaphoz. Amennyiben valamelyik feltétel nem teljesül, úgy a gomb ne legyen kattintható (ehhez használja a disabled HTML attribútum állítását JavaScript kód alapján). `PayerName`: kötelező megadni, max. 50 karakter hosszú lehet. `Amount`: kötelező megadni, csak nullánál nagyobb pozitív érték lehet.
+Adjon hozzá kliensoldali validációt az új számla felviteli űrlaphoz. Amennyiben valamelyik feltétel nem teljesül, úgy a gomb ne legyen kattintható (ehhez használja a button elem disabled attribútum állítását JavaScript kód alapján). `PayerName`: kötelező megadni, max. 50 karakter hosszú lehet. `Amount`: kötelező megadni, csak nullánál nagyobb pozitív érték lehet.

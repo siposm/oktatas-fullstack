@@ -1,6 +1,6 @@
 # Workshop #3
 
-| Full-Stack fejlesztés | |
+| Full-Stack Fejlesztés | |
 |-----|---|
 | Témakörök: | JS |
 | Cím: | Adatfeldolgozás JavaScript programozáson keresztül |
@@ -101,7 +101,7 @@ const developers = [
         "job": "Frontend Developer",
         "age": 35,
         "salary": 350000,
-        "image": "https://randomuser.me/api/portraits/men/2.jpg",
+        "image": "https://randomuser.me/api/portraits/men/1.jpg",
         "skills": [
             "User Research",
             "Wireframing",
