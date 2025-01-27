@@ -1,11 +1,6 @@
 # Workshop #1
 
-| Full-Stack Fejlesztés | |
-|-----|---|
-| Témakörök: | HTML |
-| Cím: | Statikus, több aloldalból álló HTML weboldal létrehozása |
-
-## Feladat
+## Feladat: Statikus, több aloldalból álló HTML weboldal létrehozása
 
 Hozza létre az alábbi oldalakat a leírásoknak és kikötéseknek megfelelően. Egyelőre csak HTML-t használjon, CSS és JS ne kerüljön a kódba. A feladat egy fiktív magánegyetem weboldalának létrehozása.
 

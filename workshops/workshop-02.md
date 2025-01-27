@@ -1,11 +1,6 @@
 # Workshop #2
 
-| Full-Stack Fejlesztés | |
-|-----|---|
-| Témakörök: | HTML, CSS |
-| Cím: | Statikus oldalak látványának kiegészítése CSS segítségével |
-
-## Feladat
+## Feladat: Statikus oldalak látványának kiegészítése CSS segítségével
 
 A workshop 01-es feladatban leírt oldalt / oldalakat egészítse ki a megfelelő módon saját CSS, valamint Bootstrap felhasználással.
 

@@ -1,11 +1,6 @@
 # Workshop #5
 
-| Full-Stack Fejlesztés | |
-|-----|---|
-| Témakörök: | ASP.MVC |
-| Cím: | ASP.MVC CRUD alkalmazás készítése |
-
-## Feladat
+## Feladat: ASP.MVC CRUD alkalmazás készítése
 
 A feladat egy ASP.MVC alkalmazás készítése, aminek segítségével számlabefizetéseket lehet kezelni, teljes CRUD funkcionalitással.
 

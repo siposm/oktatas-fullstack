@@ -1,11 +1,6 @@
 # Workshop #4
 
-| Full-Stack Fejlesztés | |
-|-----|---|
-| Témakörök: | JS |
-| Cím: | JavaScript CRUD alkalmazás készítése |
-
-## Feladat
+## Feladat: JavaScript CRUD alkalmazás készítése
 
 A feladat a workshop 03-as feladat folytatása, teljeskörű CRUD alkalmazássá fejlesztése localStorage tárolással.
 

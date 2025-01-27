@@ -1,11 +1,6 @@
 # Workshop #3
 
-| Full-Stack Fejlesztés | |
-|-----|---|
-| Témakörök: | JS |
-| Cím: | Adatfeldolgozás JavaScript programozáson keresztül |
-
-## Feladat
+## Feladat: Adatfeldolgozás JavaScript programozáson keresztül
 
 A feladat egy komplex adathalmaz feldolgozása JavaScript segítségével, ezek megjelenítése majd különböző számítások elvégzése.
 

@@ -1,4 +1,4 @@
-# Full-Stack Fejlesztés - Féléves Feladat
+# Full-stack szoftverfejlesztés - Féléves feladat
 
 ## Általános elvárások
 
@@ -22,7 +22,7 @@ Minden esetben tesztelje a feladatot több, változatos bemenettel, hogy a megfe
 
 ### Verziókövetés
 
-???A programot... TODO
+A programot lokális verziókövetéssel kell kezelni a tanultaknak megfelelően. Minimum 20 commit megléte szükséges az elfogadható féléves feladathoz. A commit-oknak követniük kell a "commit small, commit often" elvet, illetve törekedni kell az értelmes (értendő ezalatt, hogy a "csak meglegyen a minimum darabszám" miatt létrehozott commit-ok nem számítanak) commit-ok léterhozására, beszédes üzenetekkel.
 
 ### Határidők
 
@@ -350,3 +350,24 @@ A rendszert készítse el úgy, hogy akár több URL is megadható pl. egymás a
 
 - Bemenetek: tesztelendő URL(-ek)
 - Kimenetek: szolgáltatás(ok) elérhetősége és kapcsolódó adatok
+
+### Szókitaláló akasztófa
+
+Készítsen egy szókitaláló rendszert. A program indulásakor a kliensoldal generáljon egy szóhalmazból egy véletlen kiválasztott elemet. A szóhalmazt kézzel vigye fel a kódba, ebből sorsoljon a rendszer véletlen. Ezt a felhasználó ne lássa, csak jelenjen meg számára annyi darab inputmező, ahány betűből áll a szó. Az egyszerűség kedvéért minden betű ténylegesen egy karakter legyen, tehát az "ly" két betűnek kezelendő, "l" és "y".
+
+A felhasználó kitöltés után egy gombbal tudja elküldeni a backendnek az inputmezők értékeit, valamint az eredeti szót is. A backend feladata, hogy ellenőrizze, mely betű talált és melyik nem.
+
+A hagyományos akasztófával ellentétben itt a megadott betűk sorrendje fontos! A rendszer számítsa ki, hogy adott helyen megadott betű milyen messze volt a céltól.
+
+Példa:
+
+- véletlenül generált szó: "macska"
+- megjelenített input mezők száma: `[_] [_] [_] [_] [_] [_]`
+- kitöltés eredménye: `[m] [a] [c] [s] [e] [k]`
+- látható, hogy az utolsó két karakter nem megfelelő
+  - az "e" karakter helyett "k" karakter lett volna a megfelelő, míg az utolsó "k" helyett az "a" karakter
+  - a várt "e" és a megadott "k" karakter közötti távolság az abc betűi alapján számolható
+
+A backend adja vissza, hogy mi volt az eredeti szó, mi volt a tippelt szó, melyik betűt nem sikerült eltalálni, és hogy milyen messze volt adott karakter az elvárt karaktertől.
+
+A kliens ezeket jelenítse meg valamilyen látványos és játékos formában. Színezéssel jelezze, hogy a szó hány százalékát sikerült kitalálni (eltalált karakter / összes karakter).
