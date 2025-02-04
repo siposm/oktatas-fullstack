@@ -138,7 +138,7 @@ Egy konkrét komplex feladat megvalósítása ASP.NET keretrendszerben, felhaszn
     06 - Feladatmegoldás: View réteg elkészítése 3. - DELETE
     07 - Feladatmegoldás: View réteg elkészítése 4. - UPDATE
     08 - Feladatmegoldás: View réteg elkészítése (bónusz reflexió, apró simítások)
-    09 - Feladetmegoldás: View réteg elkészítése (JS hozzáadása)
+    09 - Feladatmegoldás: View réteg elkészítése (JS hozzáadása)
 
 ### 11. modul: REST API
 
