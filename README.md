@@ -21,6 +21,14 @@ A hallgatók a következő témakörökkel ismerkednek meg tartalmilag összefü
 - REST API alapú fejlesztés (moden webfejlesztés)
 - CRUD alkalmazás készítése REST API alapon
 
+## Követelmények
+
+<https://nik.uni-obuda.hu/targyleirasok/tantargyak/full-stack-szoftverfejlesztes/>
+
+## Tárgy weboldala
+
+<https://nik.siposm.hu/fs>
+
 ## Modulok
 
 ### 1. modul: Webfejlesztés alapjai
