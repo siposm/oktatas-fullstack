@@ -47,7 +47,9 @@ Minden esetben tesztelje a feladatot több, változatos bemenettel, hogy a megfe
 
 ### Határidők
 
-A féléves feladatot a szorgalmi időszakban kell elkészíteni a 12. szorgalmi hét végéig bezárólag, és a Moodle rendszerben leadni. Ezt követően majd a 13. és/vagy 14. héten be kell mutatni és meg kell védeni a laborvezetőnél. Amennyiben a 12. hétig nem készült el a munka, úgy a 13. hét végéig még elkészíthető, ez esetben csak a 14. héten lehet már bemutatni és megvédeni. Amennyiben egyik határidőre sem készült el a munka, úgy évközi jegypótló vizsgán lehet bemutatni és megvédeni.
+A féléves feladatot a szorgalmi időszakban kell elkészíteni a 12. szorgalmi hét végéig bezárólag, és a Moodle rendszerben leadni (mindenkinek a saját laborjához tartozó kurzuson, nem pedig az előadáshoz tartozó alatt). Leadáskor 1 db .zip állományt kell feltölteni. Ehhez "jobb klikk" a fentebb leírt gyökér mappára, "küldés", "tömörített mappa" lépéseket kell elvégezni. Más állomány (.rar, .tar.gz, .7z stb.) esetén a féléves feladat nem elfogadható. Amennyiben a fentebb leírt elnevezési konvencióknak a féléves feladat nem felel meg, úgy szintén nem elfogadható.
+
+Ezt követően majd a 13. és/vagy 14. héten be kell mutatni és meg kell védeni a laborvezetőnél. Amennyiben a 12. hétig nem készült el a munka, úgy a 13. hét végéig még elkészíthető, ez esetben csak a 14. héten lehet már bemutatni és megvédeni. Amennyiben egyik határidőre sem készült el a munka, úgy évközi jegypótló vizsgán lehet bemutatni és megvédeni.
 
 ## Konkrét feladatok
 
