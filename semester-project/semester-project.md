@@ -130,11 +130,11 @@ Készítsen egy rendszert, amely segít a növények gondozásában. A felhaszn�
 Minta mátrix:
 
 ```txt
-  Rózsa,Virág,2,3
-  Aloe Vera,Szukkulens,0.5,30
-  Bazsalikom,Fűszernövény,1,1
-  Levendula,Fűszernövény,1.5,7
-  Orchidea,Virág,0.75,14
+Rózsa,Virág,2,3
+Aloe Vera,Szukkulens,0.5,30
+Bazsalikom,Fűszernövény,1,1
+Levendula,Fűszernövény,1.5,7
+Orchidea,Virág,0.75,14
 ```
 
 ### 📋 Tevékenység menedzser
@@ -168,26 +168,26 @@ A feladat a hátizsák probléma megoldása. A cél összeállítani azon tárgy
 Tárgyak listája minta:
 
 ```txt
-  focilabda,30,10
-  alma,4,10
-  okostelefon,6,22
-  térkép,5,15
-  kés,3,10
-  elemlámpa,7,12
-  kötél,10,8
-  élelem,12,2
+focilabda,30,10
+alma,4,10
+okostelefon,6,22
+térkép,5,15
+kés,3,10
+elemlámpa,7,12
+kötél,10,8
+élelem,12,2
 ```
 
 Egy példa táblázat (5*7 méretű = 35 a zsák kapacitása), mint kimenet, ahol itt most nem színnel, hanem betűkkel vannak az egyes tárgyak jelölve:
 
 ```txt
-  -----------------------------
-  | X | X | Y | Y | Y | Q | Q |
-  | X | X | Y | Y | Y | Q | Q |
-  | X | X | C | B | N | N | N |
-  | X | X | C | B | N | N | N |
-  | X | X | C | B | N | N | N |
-  -----------------------------
+-----------------------------
+| X | X | Y | Y | Y | Q | Q |
+| X | X | Y | Y | Y | Q | Q |
+| X | X | C | B | N | N | N |
+| X | X | C | B | N | N | N |
+| X | X | C | B | N | N | N |
+-----------------------------
 ```
 
 ### 📐 Telek terület
@@ -328,11 +328,11 @@ A kliens feladata ebből az ismert Fibonacci spirált megalkotó négyzetek elhe
 
 ### 🚫 Cenzúrázó
 
-Készítsen egy rendszert ami blacklist-en szereplő szavakat keres szövegben és helyettesít alternatívákra. Ehhesz készítsen egy textarea-t, amiben `feketelistás szó@alternatíva-1,alternatíva-2,...` formában soronként meg lehet adni a feketelistás szavakat és a helyettük használható alternatívákat. Ezen kívül legyen még egy másik textarea, amiben hosszú szöveget lehet megadni. A backend megkapva ezeket, nézze végig a bemeneti szöveget, és amennyiben feketelistás szót talál, cserélje azt ki egy alternatívára. A rendszer figyeljen arra, hogy a kicserélt szavak előfordulása egyenlően oszoljon el és ne legyen szóismétlés. Ez utóbbi alatt azt értjük, hogy ha például egy mondatban kicserélünk egy feketelistás szót egy alternatívára, akkor az alternatíva lehetőleg ugyanabban a mondatban ne forduljon elő mégegyszer. A rendszer legyen képes arra, hogy érzékelje a kis- és nagybetűket. Ezt figyelembe véve is legyen képes kicserélni egy szót, viszont a "betűrendet" a cserélést követően is. A rendszer ragozásokat nem kell, hogy kezelni tudjon.
+Készítsen egy rendszert ami blacklist-en szereplő szavakat keres szövegben és helyettesít alternatívákra. Ehhesz készítsen egy textarea-t, amiben `feketelistás szó@alternatíva-1,alternatíva-2,...` formában soronként meg lehet adni a feketelistás szavakat és a helyettük használható alternatívákat. Ezen kívül legyen még egy másik textarea, amiben hosszú szöveget lehet megadni. A backend megkapva ezeket, nézze végig a bemeneti szöveget, és amennyiben feketelistás szót talál, cserélje azt ki egy alternatívára. A rendszer figyeljen arra, hogy a kicserélt szavak előfordulása egyenlően oszoljon el és ne legyen szóismétlés. Ez utóbbi alatt azt értjük, hogy ha például egy mondatban kicserélünk egy feketelistás szót egy alternatívára, akkor az alternatíva lehetőleg ugyanabban a mondatban ne forduljon elő mégegyszer. A rendszer legyen képes arra, hogy érzékelje a kis- és nagybetűket. Ezt figyelembe véve is legyen képes kicserélni egy szót, viszont a "betűrendet" a cserélést követően is tartsa meg. A rendszer ragozásokat nem kell, hogy kezelni tudjon.
 
 A backend adja vissza a kliensnek a szükséges dolgokat, ahhoz, hogy meg tudja jeleníteni a szöveget a következő formában: `Egy tavaszi reggelen a nap első sugarai (aranyszínű|sötétzöld) fénybe borították a kis falut.` Ebben az esetben az aranyszínű szót cserélte a rendszer sötétzöldre. Ezt úgy jelenítse meg a kliensoldal, hogy mind a két szó szerepeljen, a régi szó piros badge-ben legyen, az új szó pedig zöld badge-ben. Természetesen a `(|)` karakterek nem kellenek, csak a jól láthatóság miatt szerepel itt így.
 
-Az eredeti szövegről és a módosított szövegről készítsen szófelhőt, annyi különbséggel, hogy egy kétoszlopos felosztásban a szavak előfordulási gyakorisága alapján fentről lefele legyenek sorrendben a szavak egymás alatt. Elöl a leggyakrabban ismétlődő szavak, alul pedig a legritkábban ismétlődő szavak. A szavak betűméretei legyenek arányosítva egymáshoz képest: a leggyakrabb szó legyen a legnagyobb betűméretű, és csökkenjen arányosan.
+Az eredeti szövegről és a módosított szövegről készítsen szófelhőt, annyi különbséggel, hogy egy kétoszlopos (A oszlop: eredeti szöveg, B oszlop: módosított szöveg) felosztásban a szavak előfordulási gyakorisága alapján fentről lefele legyenek sorrendben a szavak egymás alatt. Elöl a leggyakrabban ismétlődő szavak, alul pedig a legritkábban ismétlődő szavak. A szavak betűméretei legyenek arányosítva egymáshoz képest: a leggyakrabb szó legyen a legnagyobb betűméretű, és csökkenjen arányosan.
 
 ### 💡 Villanyszámla költségek
 
