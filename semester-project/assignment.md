@@ -253,3 +253,4 @@
 | 249 | CQ3AZX | 🚫 [Cenzúrázó](https://github.com/siposm/oktatas-fullstack/blob/master/semester-project/semester-project.md#-cenzúrázó) |
 | 250 | IBJ43R | 💡 [Villanyszámla költségek](https://github.com/siposm/oktatas-fullstack/blob/master/semester-project/semester-project.md#-villanyszámla-költségek) |
 | 251 | AS05KA | 🔒 [Jelszókezelő](https://github.com/siposm/oktatas-fullstack/blob/master/semester-project/semester-project.md#-jelszókezelő) |
+| 252 | FCULL1 | 📏 [Fibonacci rajzoló](https://github.com/siposm/oktatas-fullstack/blob/master/semester-project/semester-project.md#-fibonacci-rajzoló) |
