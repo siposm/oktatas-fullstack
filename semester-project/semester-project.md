@@ -261,9 +261,6 @@ A mátrix:
   Agyagos,Agyagos,Tőzeges,Lúgos,Lúgos
   Tőzeges,Szerves,Szerves,Savanyú,Tőzeges
   Savanyú,Lúgos,Homokos,Szerves,Agyagos
-  Lúgos,Sós,Sós,Tőzeges,Sós
-  Szerves,Vályogos,Savanyú,Homokos,Vályogos
-  Homokos,Homokos,Agyagos,Agyagos,Savanyú
 
 B mátrix:
   0.616555682,0.640437434,0.394921648,0.989150841,0.094593963
@@ -284,6 +281,7 @@ A szerver a megkapott mátrixokat dolgozza fel és adjon vissza egy aggregált e
 
 A talajok vízelvezető képessége így néz ki:
 
+- Savanyú talaj: 0.410
 - Agyagos talaj: 0.319
 - Tőzeges talaj: 0.380
 - Szerves talaj: 0.391
