@@ -1,5 +1,5 @@
 p {
-    color: blue;
+    color: rgb(252, 30, 196);
 }
 
 h1 {
@@ -32,7 +32,7 @@ input[type="text"] {
 }
 
 .btn:hover {
-    background-color: violet;
+    background-color: rgb(245, 255, 58);
 }
 
 .btn:active {

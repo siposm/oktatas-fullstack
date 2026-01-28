@@ -4,7 +4,7 @@ let todos = [
     // { content: 'train', priority: 6 },
 ]
 
-// // seed
+// seed
 // todos.forEach(element => {
 //     let p = document.createElement('p')
 //     p.innerHTML = element.content + " (" + element.priority + ")"

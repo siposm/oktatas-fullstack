@@ -23,7 +23,7 @@ A hallgatók a következő témakörökkel ismerkednek meg tartalmilag összefü
 
 ## Követelmények
 
-<https://nik.uni-obuda.hu/targyleirasok/tantargyak/full-stack-szoftverfejlesztes/>
+<https://nik.uni-obuda.hu/targyleirasok/tantargyak/full-stack-szoftverfejlesztes-2/>
 
 ## Tárgy weboldala
 
